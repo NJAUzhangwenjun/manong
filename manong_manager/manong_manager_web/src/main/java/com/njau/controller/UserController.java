@@ -24,7 +24,6 @@ public class UserController {
 		@RequestMapping("/user/{userid}")
 		@ResponseBody
 		public User getUserById(@PathVariable Integer userid){
-				System.out.println(userid+"yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy");
 				User user = userService.getUserById(userid);
 				return user;
 		}
